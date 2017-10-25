@@ -1,0 +1,72 @@
+<% include ../partials/head%>
+<% include ../partials/header%>
+<!-- main container -->
+<div class="container">
+
+<div class="container">
+      <div class="jumbotron" id="jumb" >
+        <!-- <h1><i class="fa fa-camera" aria-hidden="true"  ></i> Talk-Talk</h1> -->
+
+        <p>Be heard | Air your views | Tell us what's happening !!!.</p>
+        <!-- <a href="/home/new" class="btn btn-primary btn-lg">Add Your Latest Photo</a> -->
+        <hr>
+        <!-- <p>Online Dem-say Dem-say</p> -->
+         <a href="#">Sign Up</a> |
+         <a href="#">Login</a>   |
+         <a href="#">Become a correspondent and get paid</a>  |
+         <a href="#">Trending</a>  |
+         <a href="/new_post">Creat New Post</a>  |
+        <!-- <hr> -->
+      </div>
+</div>
+
+<div class="container">
+
+
+      <div class="container-fluid">
+         <div class="thumbnail" id="well">
+              <div class="row" id="row">
+                <% allPost.forEach((data) => { %>
+                      <div  class=" col-lg-12">
+                        <i class="fa fa-bullhorn" aria-hidden="true"></i> <a href="/<%= data._id%>"> <%- data.title.substring(0, 90) %>... </a>
+                        <hr>
+                      </div>
+                 <% }); %>
+              </div>
+          </div>
+      </div>
+
+
+  <div class="container-fluid">
+          <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                      <div class="thumbnail" id="thumb_com">
+                        <p> <a href="#">(1)</a>..........<a href="#">(2)</a>....</p>
+                        <hr>
+                         <p> <a href="#">(1)</a>..........<a href="#">(2)</a>....</p>
+                      </div>
+                </div>
+               <div class="col-md-2"></div>
+         </div>
+  </div>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<% include ../partials/footer%>
+<% include ../partials/foot %>

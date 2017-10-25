@@ -1,0 +1,62 @@
+<% include ../partials/head%>
+<% include ../partials/header%>
+<div class="container">
+
+
+<div class="container">
+      <div class="jumbotron" id="jumb" >
+        <!-- <h1><i class="fa fa-camera" aria-hidden="true"  ></i> Talk-Talk</h1> -->
+      <p style="text-align: center;">People are waiting to hear from you..tell us whats going on around you.</p>
+
+        <!-- <a href="/home/new" class="btn btn-primary btn-lg">Add Your Latest Photo</a> -->
+        <hr>
+         <a href="#">Sign Up</a> |
+         <a href="#">Login</a>   |
+         <a href="#">Become a correspondent</a>  |
+         <a href="#">Trending</a>  |
+         <a href="#">Creat New Post</a>  |
+        <!-- <hr> -->
+      </div>
+</div>
+
+<div class="container" id="cont-new-form">
+        <div class="row">
+              <div class="col-md-6 col-sm-12 col-lg-6 col-xs-12" style="margin: 0px auto;" >
+                    <form action="/" method="Post">
+                          <div class="form-group">
+                             <label for=""> Title</label>
+                              <input class="form-control" type="text" name="title" placeholder="Story title">
+                          </div>
+                          <div class="form-group">
+                            <label for=""> Story</label>
+                            <textarea name="text" id="input${1/(\w+)/\u\1/g}" class="form-control" rows="8" placeholder="Write your story here" required="required"></textarea>
+                          </div>
+                          <div class="form-group">
+                              <input class="form-control" id="form-cont"  type="file" name="image1">
+                          </div>
+                          <div class="form-group">
+                              <input class="form-control" id="form-cont" type="file" name="image2">
+                          </div>
+                          <div class="form-group">
+                              <input class="form-control" id="form-cont" type="file" name="image3">
+                          </div>
+                          <div class="form-group">
+                              <button class="btn btn-lg btn-info btn-block" btn>Post!</button>
+                          </div>
+                    </form>
+                    <a href="/">Back</a>
+                </div>
+        </div>
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+<% include ../partials/footer%>
+<% include ../partials/foot %>

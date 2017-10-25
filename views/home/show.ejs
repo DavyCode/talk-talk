@@ -1,0 +1,124 @@
+<% include ../partials/head%>
+<% include ../partials/header%>
+
+<div class="container">
+
+        <div class="container">
+              <div class="jumbotron" id="jumb" >
+                <!-- <h1><i class="fa fa-camera" aria-hidden="true"  ></i> Talk-Talk</h1> -->
+              <p style="text-align: center;">Be obvious...Be heard!!</p>
+
+                <!-- <a href="/home/new" class="btn btn-primary btn-lg">Add Your Latest Photo</a> -->
+                <hr>
+                 <a href="#">Sign Up</a> |
+                 <a href="#">Login</a>   |
+                 <a href="#">Become a correspondent</a>  |
+                 <a href="#">Trending</a>  |
+                 <a href="/new_post">Creat New Story</a>  |
+                 <!-- <a href="/edit_post">Edit Story</a>  | -->
+                <!-- <hr> -->
+              </div>
+        </div>
+
+<div class="container">
+
+<div class="container-fluid">
+
+<div class="well" id="well">
+
+  <div class="thumbnail" id="thumb">
+
+          <div class="row">
+              <div class="col-md-3" >
+                  <h3> <i class="fa fa-bullhorn" aria-hidden="true"></i> Talk-Talk </h3>
+                  <div>
+                      <!-- <li class="list-group-item active" id="titleholder"><p><i class="fa fa-newspaper-o" aria-hidden="true"></i> <%=displayPost.title %></p> </li> -->
+                      <li class="list-group-item"><a href=""><i class="fa fa-user" aria-hidden="true"></i> Posted by </a></li>
+                      <li class="list-group-item"><i class="fa fa-clock-o" aria-hidden="true"></i>  <%=displayPost.createdAt.toLocaleTimeString() %>  <%=displayPost.createdAt.toLocaleDateString() %></li>
+                  </div>
+              </div>
+              <div class="col-md-9" >
+                      <div class="thumbnail" id="row_text">
+                            <h4 class="list-group-item active" id="titleholder"><p><i class="fa fa-newspaper-o" aria-hidden="true"></i> <%=displayPost.title %></p> </h4>
+
+                          <hr>
+                              <img class="img-responsive" src="/<%=displayPost.image1 %>" >
+                              <hr>
+                              <div class="caption-full">
+                                  <!-- <h4 class="caption">
+                                     <%=displayPost.text %>
+                                  </h4> -->
+                                  <p>
+                                     <%=displayPost.text %>
+                                  </p>
+                                  <p>
+                                        Students will learn necessary competencies maintenance of basic personal computer hardware and operating systems. In order to receive CompTIA A+ certification a candidate must pass two exams. Students will learn necessary competencies maintenance of basic personal computer hardware and operating systems. In order to receive CompTIA A+ certification a candidate must pass two exams. Students will learn necessary competencies maintenance of basic personal computer hardware and operating systems. In order to receive CompTIA A+ certification a candidate must pass two exams. Students will learn necessary competencies maintenance of basic personal computer hardware and operating systems. In order to receive CompTIA A+ certification a candidate must pass two exams.
+                                  </p>
+
+
+                                 <hr>
+                                 <div class="text-right">
+                                     <a class="btn btn-xs btn-success" href="#">Like <i class="fa fa-thumbs-up" aria-hidden="true"  ></i></a>
+                                     <a class="btn btn-xs btn-success" href="#">Comment <i class="fa fa-comments" aria-hidden="true"></i></a>
+                                 </div>
+                                  <!--Edit button-->
+                                  <a id="edit-btn" class="btn btn-xs btn-warning" href="/<%= displayPost._id %>/edit_post">Edit post</a>
+                                  <!--delete form-->
+                                  <form id="del-btn" action="/<%=displayPost._id %>?_method=DELETE" method="POST">
+                                      <!-- <button class="btn btn-xs btn-danger" >Delete post <i class="fa fa-times" aria-hidden="true"></i></button> -->
+                                      <button class="btn btn-xs btn-danger" >Delete post <i class="fa fa-trash-o" aria-hidden="true"></i></button>
+
+                                  </form>
+                             </div>
+                      </div>
+              </div>
+        </div>
+                  <!--Comment section-->
+                <div class="row">
+                  <div class="col-md-3"></div>
+
+                   <div class="col-md-9" >
+                          <div class="thumbnail" id="row_text">
+                              <hr>
+                              <p>
+                                    Students will learn necessary competencies maintenance of basic personal computer hardware and operating systems. In order to receive CompTIA A+ certification a candidate must pass two exams. Students will learn necessary competencies maintenance of basic personal computer hardware and operating systems. In order to receive CompTIA A+ certification a candidate must pass two exams. Students will learn necessary competencies maintenance of basic personal computer hardware and operating systems. In order to receive CompTIA A+ certification a candidate must pass two exams. Students will learn necessary competencies maintenance of basic personal computer hardware and operating systems. In order to receive CompTIA A+ certification a candidate must pass two exams.
+                              </p>
+                              <hr>
+                              <hr>
+                              <p>
+                                    Students will learn necessary competencies maintenance of basic personal computer hardware and operating systems. In order to receive CompTIA A+ certification a candidate must pass two exams. Students will learn necessary competencies maintenance of basic personal computer hardware and operating systems. In order to receive CompTIA A+ certification a candidate must pass two exams. Students will learn necessary competencies maintenance of basic personal computer hardware and operating systems. In order to receive CompTIA A+ certification a candidate must pass two exams. Students will learn necessary competencies maintenance of basic personal computer hardware and operating systems. In order to receive CompTIA A+ certification a candidate must pass two exams.
+                              </p>
+                          </div>
+                   </div>
+              </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+   <div class="container-fluid">
+           <div class="row">
+                 <div class="col-md-2"></div>
+                 <div class="col-md-8" >
+                       <div class="thumbnail" id="row_text">
+                         <p> <a href="#">(1)</a>..........<a href="#">(2)</a>....</p>
+                         <hr>
+                          <p> <a href="#">(1)</a>..........<a href="#">(2)</a>....</p>
+                       </div>
+                 </div>
+                 <div class="col-md-2"></div>
+          </div>
+   </div>
+
+
+
+
+
+
+</div>
+
+
+<% include ../partials/footer%>
+<% include ../partials/foot %>
